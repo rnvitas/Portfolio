@@ -201,10 +201,6 @@ body {
   /* box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1); */
 }
 
-.article-list {
-  align-items: center;
-}
-
 /* Style Hero Section */
 
 #hero {
@@ -373,6 +369,10 @@ body {
   padding-top: 10rem;
   padding-bottom: 2rem;
 }
+
+.porto-list {
+  align-items: center;
+}
 /* Style Porto Section */
 
 /* Style about */
@@ -436,6 +436,10 @@ body {
 
 #articles .card {
   margin-bottom: 32px;
+}
+
+.article-list {
+  align-items: center;
 }
 /* style articles */
 @media (max-width: 768px) {
