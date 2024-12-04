@@ -463,7 +463,7 @@ body {
 
   .btn-join {
     position: relative;
-    left: -2rem;
+    left: -4rem;
   }
 
   .navbar-links ul {
@@ -490,7 +490,7 @@ body {
 
   .container {
     max-width: 100%;
-    width: 300px;
+    width: 320px;
   }
 
   .navbar .navbar-links {
