@@ -357,6 +357,7 @@ body {
   padding: 8px 12px;
   border-radius: 0px 0px 20px 20px;
   max-width: 100%;
+  margin-top: -1rem;
 }
 
 .title-porto p {
