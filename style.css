@@ -19,6 +19,7 @@ body {
   font-weight: 500;
   font-style: normal;
   margin: 0 auto;
+  scroll-behavior: smooth;
   /* background-color: #1c1c1c; */
 }
 
@@ -26,6 +27,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -120,7 +126,7 @@ body {
 
 .toggle-button:hover {
   border: 2px solid var(--primary-color);
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 .toggle-button .bar {
@@ -190,6 +196,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 60px;
+  margin: 0 auto;
 }
 
 .card {
@@ -204,7 +211,7 @@ body {
 /* Style Hero Section */
 
 #hero {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 2rem;
   background-color: var(--bg-primary-color);
 }
@@ -292,6 +299,9 @@ body {
   align-items: center;
   font-weight: 400;
   text-align: center;
+  margin: 3rem 2rem;
+  font-size: 22px;
+  color: var(--primary-color);
 }
 
 #skills .card {
@@ -446,16 +456,16 @@ body {
   .row {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Jarak antara kolom */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
+
   .btn-join {
     position: relative;
-    left: -4rem;
+    left: -2rem;
   }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
+
   .navbar-links ul {
     flex-direction: column;
     justify-content: center;
@@ -472,6 +482,7 @@ body {
     padding: 5px 6px;
   }
   .navbar {
+    padding: 1.5rem 1rem;
     border-radius: 10px;
     z-index: 9999;
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
@@ -479,28 +490,32 @@ body {
 
   .container {
     max-width: 100%;
-    width: 300px;
-    box-sizing: content-box;
+    width: 360px;
   }
 
-  .navbar .navbar-links.active {
-    display: flex;
+  .navbar .navbar-links {
+    overflow: hidden;
     flex-direction: column;
     position: absolute;
     right: 0;
     top: 105%;
-    max-width: 100%;
+    width: 100%;
+    max-height: 0px;
     background-color: white;
     z-index: 1;
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: max-height 0.5s;
   }
 
-  .btn-primary {
+  .navbar .navbar-links.active {
+    max-height: 400px;
+  }
+
+  .btn-primary.btn-join {
     font-size: 12px;
-    /* max-width: 100%; */
     padding: 9px 16px !important;
-    /* width: 100%; */
+    max-width: fit-content;
     margin-right: -3rem !important;
   }
 
