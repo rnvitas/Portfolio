@@ -30,10 +30,31 @@ const projects = [
     tittle: "Redesign Landing Page and List Product",
     type: "Projects",
   },
+  {
+    image: "foto/porto_1.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "SheSafe",
+    type: "Projects",
+  },
+  {
+    image: "foto/porto_1.png",
+    category1: "UI/UX Design",
+    category2: "Web Apps",
+    tittle: "Literasictarsa.id",
+    type: "Projects",
+  },
+  {
+    image: "foto/porto_1.png",
+    category1: "Fullstack Development",
+    category2: "Dashboard Apps",
+    tittle: "Dashboard Monitoring Pemilu 2024",
+    type: "Projects",
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("project-container");
+  const container = document.getElementById("porto-container");
 
   projects.map((item, index) => {
     const projectCard = `<div class="card-porto" id="project${index + 1}">
@@ -74,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const filterBtns = document.querySelectorAll(".btn-filter");
-  const container = document.getElementById("project-container");
+  const container = document.getElementById("porto-container");
 
   const defaultActiveBtn = document.querySelector(".btn-filter[value='']");
   defaultActiveBtn.classList.add("active");
@@ -123,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //Popup Menu and Detail
 const body = document.getElementsByTagName("body")[0];
 const popMenu = document.getElementById("popmenu");
-const containers = document.getElementById("project-container");
+const containers = document.getElementById("porto-container");
 const detailProject = [
   {
     id: `project1`,
