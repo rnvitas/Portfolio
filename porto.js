@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //Data Portfolio
 const projects = [
   {
+    id: `project1`,
     image: "foto/porto_1.png",
     category1: "UI Development",
     category2: "Landing Page",
@@ -17,6 +18,7 @@ const projects = [
     type: "Exploration",
   },
   {
+    id: `project2`,
     image: "foto/porto_2.png",
     category1: "UI/UX Design",
     category2: "Prototyping",
@@ -24,6 +26,7 @@ const projects = [
     type: "Exploration",
   },
   {
+    id: `project3`,
     image: "foto/porto_6.png",
     category1: "UI Development",
     category2: "Responsive Design",
@@ -31,6 +34,7 @@ const projects = [
     type: "Projects",
   },
   {
+    id: `project4`,
     image: "foto/porto_1.png",
     category1: "Fullstack Development",
     category2: "Web Apps",
@@ -38,6 +42,7 @@ const projects = [
     type: "Projects",
   },
   {
+    id: `project5`,
     image: "foto/porto_1.png",
     category1: "UI/UX Design",
     category2: "Web Apps",
@@ -45,6 +50,7 @@ const projects = [
     type: "Projects",
   },
   {
+    id: `project6`,
     image: "foto/porto_1.png",
     category1: "Fullstack Development",
     category2: "Dashboard Apps",
@@ -56,8 +62,8 @@ const projects = [
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("porto-container");
 
-  projects.map((item, index) => {
-    const projectCard = `<div class="card-porto" id="project${index + 1}">
+  projects.map((item) => {
+    const projectCard = `<div class="card-porto" id="${item.id}">
             <div class="img-porto">
               <img src="${item.image}" />
             </div>
@@ -115,9 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
       container.innerHTML = "";
 
       if (filteredData.length > 0) {
-        filteredData.forEach((item, index) => {
+        filteredData.forEach((item) => {
           const projectCard = `
-              <div class="card-porto" id="project${index + 1}">
+              <div class="card-porto" id="${item.id}">
                 <div class="img-porto">
                   <img src="${item.image}" />
                 </div>
@@ -229,14 +235,16 @@ containers.addEventListener("click", function (event) {
     const projectId = clickedCard.id;
 
     const content = detailProject.find((item) => item.id == projectId);
-    //   console.log("ini content", content);
+    console.log("projectsid", projectId);
+
+    console.log("ini content", content);
     if (content) {
       popMenu.classList.toggle("active");
       body.style.overflow = "hidden";
 
       const detail = `
         <div class="container detail-project">
-          <div class="popup-menu" id="detailproject${content.id}">
+          <div class="popup-menu" id="${content.id}">
             <div class="popup-heading">
               <div>
                 <h6 style="background-color: #d46e1a; color: white; border-radius: 10px; padding: 8px 8px; display: inline-flex; margin-bottom: 0px;">
