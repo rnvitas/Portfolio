@@ -211,7 +211,7 @@ containers.addEventListener("click", function (event) {
     //   console.log("ini content", content);
     if (content) {
       popMenu.classList.toggle("active");
-      body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
 
       const detail = `
         <div class="container detail-project">
