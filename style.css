@@ -751,10 +751,9 @@ body {
   margin: 0 auto;
   z-index: 20;
   padding: 12px 24px;
-  min-height: 95vh;
-  max-height: max-content;
 }
 .popup-menu {
+  min-height: 80vh;
   height: 500px;
   scroll-behavior: smooth;
   overflow-y: scroll;
