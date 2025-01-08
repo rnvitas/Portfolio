@@ -571,7 +571,7 @@ body {
 .category::-webkit-scrollbar,
 .popup-menu::-webkit-scrollbar,
 .popup-technologies::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
 }
 
 .category::-webkit-scrollbar-thumb,
@@ -742,25 +742,28 @@ body {
 
 /* style popmenu */
 
-.detail-project {
+#popmenu {
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 20px 20px 0px 0px;
-  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-items: center;
   z-index: 20;
-  padding: 12px 24px;
+  width: 85%;
 }
+
 .popup-menu {
-  min-height: 80vh;
+  min-height: 90vh;
+  max-height: 90vh;
   height: 500px;
   scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
-  scrollbar-gutter: 2rem;
   scrollbar-width: thin;
   scrollbar-color: #5d5cdc #f5f5f5;
+  padding-right: 2rem;
 }
 
 .popup-heading {
@@ -768,7 +771,9 @@ body {
   gap: 8px;
   justify-content: space-between;
 }
-
+.detail-project {
+  padding: 12px 24px;
+}
 #popmenu {
   position: fixed;
   /* right: 3rem; */
