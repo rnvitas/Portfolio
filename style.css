@@ -756,7 +756,7 @@ body {
   display: flex;
   justify-items: center;
   z-index: 20;
-  min-height: 100vh;
+  min-height: 80vh;
   max-height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -778,6 +778,7 @@ body {
 }
 
 .popup-heading {
+  /* position: sticky; */
   display: flex;
   gap: 8px;
   justify-content: space-between;
