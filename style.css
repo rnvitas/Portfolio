@@ -756,6 +756,7 @@ body {
   min-height: 100vh;
   max-height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .popup-menu {
@@ -780,6 +781,7 @@ body {
 }
 .detail-project {
   padding: 12px 1rem;
+  overflow-x: hidden;
 }
 #popmenu {
   position: fixed;
