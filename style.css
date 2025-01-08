@@ -756,7 +756,7 @@ body {
   display: flex;
   justify-items: center;
   z-index: 20;
-  min-height: 80vh;
+  min-height: 90vh;
   max-height: 100%;
   width: 100%;
   overflow-x: hidden;
