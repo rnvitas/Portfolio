@@ -211,8 +211,8 @@ containers.addEventListener("click", function (event) {
     //   console.log("ini content", content);
     if (content) {
       popMenu.classList.toggle("active");
+      document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
-
       const detail = `
         <div class=" detail-project">
           <div class="popup-menu" id="detailproject${content.id}">
@@ -258,7 +258,8 @@ containers.addEventListener("click", function (event) {
       const closeBtn = document.getElementById(`close-${content.id}`);
       closeBtn.addEventListener("click", function () {
         popMenu.classList.remove("active");
-        body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
+        document.body.style.overflow = "auto";
       });
     }
   }
