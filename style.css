@@ -751,12 +751,12 @@ body {
   display: flex;
   justify-items: center;
   z-index: 20;
+  min-height: 90vh;
+  max-height: 90vh;
   width: 85%;
 }
 
 .popup-menu {
-  min-height: 90vh;
-  max-height: 90vh;
   height: 500px;
   scroll-behavior: smooth;
   overflow-y: scroll;
