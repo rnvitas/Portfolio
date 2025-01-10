@@ -1,10 +1,35 @@
 // Navigation
+
 document.addEventListener("DOMContentLoaded", function () {
   const burgerMenu = document.getElementById("burger-menu");
   const navLinks = document.getElementById("nav-links");
   burgerMenu.addEventListener("click", function () {
     navLinks.classList.toggle("active");
   });
+
+  // window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  //   let element = document.getElementById("iframe");
+  //   let options = {
+  //     width: "100%",
+  //     height: "100%",
+  //     // uri: "spotify:track:4IdQZXM OooaIRoP7N2qCn8",
+  //     autoplay: true,
+  //     theme: 0,
+  //   };
+  //   let callback = (EmbedController) => {
+  //     setTimeout(() => {
+  //       EmbedController.play();
+  //     }, 1000);
+  //   };
+
+  //   IFrameAPI.createController(element, options, callback);
+  // };
+  // window.onload = function () {
+  //   let element = document.getElementById("iframe");
+
+  //   element.src =
+  //     "https://open.spotify.com/embed/track/4IdQZXMOooaIRoP7N2qCn8?utm_source=generator&theme=0&autoplay=true";
+  // };
 });
 
 //Data Portfolio
