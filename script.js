@@ -215,7 +215,7 @@ containers.addEventListener("click", function (event) {
       // document.body.style.overflow = "hidden";
       const detail = `
         <div class=" container detail-project">
-          <div class="popup-menu" id="detailproject${content.id}">
+          <div class="popup-menu" id="${content.id}">
             <div class="popup-heading">
               <div>
                 <h6 style="background-color: #d46e1a; color: white; border-radius: 10px; padding: 8px 8px; display: inline-flex; margin-bottom: 0px;">
@@ -241,7 +241,7 @@ containers.addEventListener("click", function (event) {
              
               <img class="img-popup" src="${content.image}" alt="">
                <h4>Technologies</h4>
-              <div class="popup-technologies ">
+              <div class="popup-technologies container ">
             
                 ${content.technologies.map((t) => `<p>${t}</p>`).join("")}
               </div>

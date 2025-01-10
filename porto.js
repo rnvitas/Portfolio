@@ -269,7 +269,7 @@ containers.addEventListener("click", function (event) {
              
               <img class="img-popup" src="${content.image}" alt="">
                <h4>Technologies</h4>
-              <div class="popup-technologies ">
+              <div class="popup-technologies container ">
             
                 ${content.technologies.map((t) => `<p>${t}</p>`).join("")}
               </div>
