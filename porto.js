@@ -243,7 +243,7 @@ containers.addEventListener("click", function (event) {
       //   document.documentElement.style.overflow = "hidden";
       //   document.body.style.overflow = "hidden";
       const detail = `
-        <div class="detail-project">
+        <div class="detail-project container">
           <div class="popup-menu" id="${content.id}">
             <div class="popup-heading">
               <div>
