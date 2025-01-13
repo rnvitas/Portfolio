@@ -35,13 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
 //Data Portfolio
 const projects = [
   {
-    image: "foto/porto_1.png",
-    category1: "UI Development",
-    category2: "Landing Page",
-    tittle: "Redesign Promotion Page (Pegadaian Digital)",
-    type: "Exploration",
+    id: `project4`,
+    image: "foto/shesafe_p.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "SheSafe",
+    type: "Projects",
   },
   {
+    id: "project2",
     image: "foto/porto_2.png",
     category1: "UI/UX Design",
     category2: "Prototyping",
@@ -49,7 +51,8 @@ const projects = [
     type: "Exploration",
   },
   {
-    image: "foto/porto_6.png",
+    id: "project3",
+    image: "foto/butik.png",
     category1: "UI Development",
     category2: "Responsive Design",
     tittle: "Redesign Landing Page and List Product",
@@ -60,8 +63,8 @@ const projects = [
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("project-container");
 
-  projects.map((item, index) => {
-    const projectCard = `<div class="card-porto" id="project${index + 1}">
+  projects.map((item) => {
+    const projectCard = `<div class="card-porto" id="${item.id}">
             <div class="img-porto">
               <img src="${item.image}" />
             </div>
@@ -209,7 +212,7 @@ On the menu board or digital display in the restaurant, include instructions on 
   },
   {
     id: `project3`,
-    image: "foto/porto_6.png",
+    image: "foto/butik.png",
     category1: "UI Development",
     category2: "Responsive Design",
     tittle: "Redesign Landing Page and List Product",
@@ -226,6 +229,32 @@ On the menu board or digital display in the restaurant, include instructions on 
     <p>In this project, I spearheaded the redesign of the landing page and product pages by creating comprehensive mockups using Figma. Subsequently, I successfully translated the new user interface design into the existing codebase utilizing CSS, Bootstrap, jQuery, and JavaScript, ensuring seamless implementation while preserving the functionality of the current system. Additionally, I meticulously crafted the pages to achieve full responsiveness, thereby enhancing the user experience across various mobile devices.</p>
     <div class="container">
     <a href="https://boutique.ctarsa.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+  },
+  {
+    id: `project4`,
+    image: "foto/shesafe_p.png",
+    category1: "Development (MERN Stack)",
+    category2: "Web Apps",
+    tittle: "SheSafe",
+    technologies: [
+      "Figma",
+      "Tailwind CSS",
+      "React JS",
+      "HTML",
+      "CSS",
+      "Express JS",
+      "MongoDB",
+    ],
+    description: `<h2>SheSafe</h2>
+    <p>SheSafe is a mobile-first website dedicated to empowering women by providing a safe platform to document personal experiences, submit cases of violence for community support, and access educational resources. With a user-friendly design tailored for mobile devices, SheSafe ensures accessibility and fosters a supportive environment where women can connect, reflect, and find strength in solidarity.</p>
+    <h3>My Role</h3>
+    <p>This application was developed over the course of 2 weeks. Serving as the tech lead for the final group project while also taking on the role of a full-stack developer, I was responsible for coordinating the team, developing application features and UI, reviewing code, and resolving issues. Additionally, I ensured consistency in the application's design, fixed existing features, and refined or added features that other team members were unable to complete, contributing to the overall success of the project.</p>
+    <div class="container" style="display:flex; gap:10px;">
+        <a href="https://www.canva.com/design/DAGcAsA57NU/qaOiHGgO6FwIkFcSkc1w1Q/edit?utm_content=DAGcAsA57NU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link" style="text-decoration:none;">View Deck</a>
+
+    <a href="https://shesafe.netlify.app/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
     </div>
     `,
   },

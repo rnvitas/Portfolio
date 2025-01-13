@@ -51,11 +51,19 @@ const projects = [
   },
   {
     id: `project6`,
-    image: "foto/porto_1.png",
-    category1: "Fullstack Development",
-    category2: "Dashboard Apps",
-    tittle: "Dashboard Monitoring Pemilu 2024",
+    image: "foto/alumni.png",
+    category1: "UI Development",
+    category2: "Web Apps",
+    tittle: "Alumnismauctarsa.id",
     type: "Projects",
+  },
+  {
+    id: `project7`,
+    image: "foto/myporto.png",
+    category1: "UI Development",
+    category2: "Responsive Web Apps",
+    tittle: "Portfolio of Rusydina",
+    type: "ForFun",
   },
 ];
 
@@ -242,6 +250,68 @@ On the menu board or digital display in the restaurant, include instructions on 
     <div class="container">
     <a href="https://literasictarsa.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
     </div>
+    `,
+  },
+  {
+    id: `project6`,
+    image: "foto/alumni.png",
+    category1: "UI Development",
+    category2: "Web Apps",
+    tittle: "Alumnismauctarsa.id",
+    technologies: [
+      "Figma",
+      "Bootstrap",
+      "Codeigniter3",
+      "HTML",
+      "CSS",
+      "Jquery",
+      "PHP",
+    ],
+    description: `<h2>Alumnismauctarsa.id</h2>
+    <h3><b>Description</b></h3>
+    <p>The CTARSA Alumni Association is a platform that plays an important role in connecting alumni. Through this platform, alumni can connect with each other and share various information, experiences, and memories from their time at CTARSA. It is not just a space, but also an emotional bridge that allows alumni to feel nostalgic about their wonderful moments together. Let’s make this platform a place full of useful information.</p>
+    <h3>My Role</h3>
+    <p>In the project alumnismau.ctarsa.id, I played a dual role as a mentor UI/UX Designer and contributed technically to the development of forum pages, galleries, and informational pages, ensuring their responsiveness. As a mentor, I provided guidance to the team regarding client requirements, application flow, and necessary data. I facilitated discussions between Frontend and Backend teams to align the application's appearance and functionality with user needs. Additionally, I actively participated in UI/UX design discussions, creating wireframes, mockups, and prototypes to visualize the application's interface and flow. Through collaborative efforts and technical contributions, we successfully delivered a high-quality application that met client expectations and provided an intuitive user experience.</p>
+    <div class="container">
+    <a href="https://alumnismau.ctarsa.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+  },
+  {
+    id: `project4`,
+    image: "foto/shesafe_p.png",
+    category1: "Development (MERN Stack)",
+    category2: "Web Apps",
+    tittle: "SheSafe",
+    technologies: [
+      "Figma",
+      "Tailwind CSS",
+      "React JS",
+      "HTML",
+      "CSS",
+      "Express JS",
+      "MongoDB",
+    ],
+    description: `<h2>SheSafe</h2>
+    <p>SheSafe is a mobile-first website dedicated to empowering women by providing a safe platform to document personal experiences, submit cases of violence for community support, and access educational resources. With a user-friendly design tailored for mobile devices, SheSafe ensures accessibility and fosters a supportive environment where women can connect, reflect, and find strength in solidarity.</p>
+    <h3>My Role</h3>
+    <p>This application was developed over the course of 2 weeks. Serving as the tech lead for the final group project while also taking on the role of a full-stack developer, I was responsible for coordinating the team, developing application features and UI, reviewing code, and resolving issues. Additionally, I ensured consistency in the application's design, fixed existing features, and refined or added features that other team members were unable to complete, contributing to the overall success of the project.</p>
+    <div class="container" style="display:flex; gap:10px;">
+        <a href="https://www.canva.com/design/DAGcAsA57NU/qaOiHGgO6FwIkFcSkc1w1Q/edit?utm_content=DAGcAsA57NU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn-link" style="text-decoration:none;">View Deck</a>
+
+    <a href="https://shesafe.netlify.app/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+  },
+  {
+    id: `project7`,
+    image: "foto/myporto.png",
+    category1: "UI Development",
+    category2: "Responsive Web Apps",
+    tittle: "Portfolio of Rusydina",
+    technologies: ["HTML", "CSS", "JS"],
+    description: `<h2>Portfolio</h2>
+   <p>My project portfolio, created using HTML, CSS, and JS, showcases information about my background, the projects I’ve worked on, and the skills I possess. It’s a dynamic space where you can explore my journey, see the impactful projects I’ve contributed to, and learn more about the expertise I bring to the table</p>  
     `,
   },
 ];
