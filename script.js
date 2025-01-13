@@ -157,7 +157,11 @@ const detailProject = [
     category2: "Landing Page",
     tittle: "Redesign Promotion Page ",
     technologies: ["Figma", "React.js", "Bootstrap"],
-    description: `<p> I was assigned a test to redesign a promotional website for a digital application. The goal of the redesign is to provide users with information about the Pegadaian Digital application and encourage them to download it. I used Figma to create the mockups and then implemented them using React.js (hardcode).</p>`,
+    description: `<p> I was assigned a test to redesign a promotional website for a digital application. The goal of the redesign is to provide users with information about the Pegadaian Digital application and encourage them to download it. I used Figma to create the mockups and then implemented them using React.js (hardcode).</p>
+    <div>
+    <a href="foto/mobilee_pg.png" target="_blank"><img src="foto/mobilee_pg.png" class="container-fluid" style=border-radius:20px;></a>
+    </div>
+    `,
   },
   {
     id: `project2`,
@@ -264,7 +268,11 @@ containers.addEventListener("click", function (event) {
 </svg></div>
             <div class="popup-content">
              
-              <img class="img-popup" src="${content.image}" alt="">
+             <a href="${
+               content.image
+             }" target="_blank" style="cursor:pointer"> <img class="img-popup" src="${
+        content.image
+      }" alt=""> </a>
                <h4>Technologies</h4>
               <div class="popup-technologies container ">
             

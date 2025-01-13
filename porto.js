@@ -27,7 +27,7 @@ const projects = [
   },
   {
     id: `project3`,
-    image: "foto/porto_6.png",
+    image: "foto/butik.png",
     category1: "UI Development",
     category2: "Responsive Design",
     tittle: "Redesign Landing Page and List Product",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: `project4`,
-    image: "foto/porto_1.png",
+    image: "foto/shesafe_p.png",
     category1: "Fullstack Development",
     category2: "Web Apps",
     tittle: "SheSafe",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     id: `project5`,
-    image: "foto/porto_1.png",
+    image: "foto/literasi.png",
     category1: "UI/UX Design",
     category2: "Web Apps",
     tittle: "Literasictarsa.id",
@@ -207,7 +207,7 @@ On the menu board or digital display in the restaurant, include instructions on 
   },
   {
     id: `project3`,
-    image: "foto/porto_6.png",
+    image: "foto/butik.png",
     category1: "UI Development",
     category2: "Responsive Design",
     tittle: "Redesign Landing Page and List Product",
@@ -224,6 +224,23 @@ On the menu board or digital display in the restaurant, include instructions on 
     <p>In this project, I spearheaded the redesign of the landing page and product pages by creating comprehensive mockups using Figma. Subsequently, I successfully translated the new user interface design into the existing codebase utilizing CSS, Bootstrap, jQuery, and JavaScript, ensuring seamless implementation while preserving the functionality of the current system. Additionally, I meticulously crafted the pages to achieve full responsiveness, thereby enhancing the user experience across various mobile devices.</p>
     <div class="container">
     <a href="https://boutique.ctarsa.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+  },
+  {
+    id: `project5`,
+    image: "foto/literasi.png",
+    category1: "UI/UX Design",
+    category2: "Web Apps",
+    tittle: "Literasictarsa.id",
+    technologies: ["Figma", "Bootstrap", "Codeigniter3", "HTML", "CSS"],
+    description: `<h2>Literasictarsa.id</h2>
+    <h3><b>Description</b></h3>
+    <p>The "Literacy CTARSA" app is a digital learning space for anyone who wants an engaging and enjoyable learning experience, without boredom. Various knowledge in the form of text, audio, and video can be accessed anytime, anywhere, and by anyone. Becoming smart in an easy and interesting way is now in your hands!</p>
+    <h3>My Role</h3>
+    <p>In this project, I played a pivotal role in designing the entire process, starting from creating wireframes to prototyping using Figma. My responsibilities extended to contributing to the development of a responsive display for the Arsapedia page, skillfully implementing Bootstrap 4 to ensure optimal user experience. This meticulous approach allowed for seamless navigation and enhanced visual aesthetics, showcasing a commitment to delivering a professional and user-friendly outcome.</p>
+    <div class="container">
+    <a href="https://literasictarsa.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
     </div>
     `,
   },
@@ -267,7 +284,11 @@ containers.addEventListener("click", function (event) {
 </svg></div>
             <div class="popup-content">
              
-              <img class="img-popup" src="${content.image}" alt="">
+              <a hreg="${
+                content.iamge
+              }" target="_blank" style="cursor:pointer;"><img class="img-popup" src="${
+        content.image
+      }" alt=""></a>
                <h4>Technologies</h4>
               <div class="popup-technologies container ">
             
