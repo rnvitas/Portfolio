@@ -240,11 +240,11 @@ On the menu board or digital display in the restaurant, include instructions on 
     tittle: "SheSafe",
     technologies: [
       "Figma",
-      "Tailwind CSS",
-      "React JS",
+      "TailwindCSS",
+      "ReactJS",
       "HTML",
       "CSS",
-      "Express JS",
+      "ExpressJS",
       "MongoDB",
     ],
     description: `<h2>SheSafe</h2>
