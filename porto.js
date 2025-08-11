@@ -65,6 +65,32 @@ const projects = [
     tittle: "Portfolio of Rusydina",
     type: "ForFun",
   },
+   {
+    id: `project8`,
+    image: "foto/indotech.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "Indotechdigital.id",
+    type: "Projects",
+  },
+   {
+    id: `project9`,
+    image: "foto/inspiramuda.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "Inspiramuda.com",
+    type: "Projects",
+  },
+   {
+    id: `project10`,
+    image: "foto/sitiarsa.png",
+    category1: "Fullstack Development",
+    category2: "OTT Web Apps",
+    tittle: "Sitiarsastudio.com",
+    type: "Projects",
+  },
+  
+
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -314,6 +340,85 @@ On the menu board or digital display in the restaurant, include instructions on 
    <p>My project portfolio, created using HTML, CSS, and JS, showcases information about my background, the projects I’ve worked on, and the skills I possess. It’s a dynamic space where you can explore my journey, see the impactful projects I’ve contributed to, and learn more about the expertise I bring to the table</p>  
     `,
   },
+   {
+    id: `project8`,
+    image: "foto/indotech.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "Indotechdigital.id",
+    technologies: [
+      "Bootstrap",
+      "Next.js",
+      "Github",
+      "VPS Deployment",
+      "PM2",
+      "Nginx",
+       "CD Pipelines",
+    ],
+   description: `<h2>Indotechdigital.id</h2>
+    <h3><b>Description</b></h3>
+    <p>Indotech Digital is a technology solutions company that provides innovative services to help businesses grow in the digital era. The platform showcases company profiles, services, and portfolios with a clean, modern, and responsive design to engage potential clients and partners.</p>
+    <h3>My Role</h3>
+    <p>In the <b>indotechdigital.id</b> project, I developed the web application using <b>Next.js</b>, performing UI slicing from a pre-designed template with custom enhancements and implementing responsive, optimized components. I deployed the application to a VPS environment, configured the domain and SSL, and developed a custom CMS to manage dynamic content efficiently. Additionally, I collaborated with the client to ensure the information architecture and content flow aligned with business goals, delivering a professional and user-friendly platform.</p>
+    <div class="container">
+    <a href="https://indotechdigital.id/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+
+  },
+   {
+    id: `project9`,
+    image: "foto/inspiramuda.png",
+    category1: "Fullstack Development",
+    category2: "Web Apps",
+    tittle: "Inspiramuda.com",
+    technologies: [
+      "Bootstrap",
+      "React.js",
+      "Github",
+    
+    ],
+  description: `<h2>Inspiramuda.com</h2>
+    <h3><b>Description</b></h3>
+    <p>Inspiramuda.com is a company profile website that showcases the brand's vision, mission, services, and portfolio. The platform is designed to reflect the creative and innovative spirit of the company, providing an engaging and visually appealing experience for visitors.</p>
+    <h3>My Role</h3>
+    <p>In the <b>inspiramuda.com</b> project, I designed and developed the user interface using <b>React.js</b>, performing UI slicing from a template and applying custom modifications. I implemented interactive animations using <b>GSAP</b> to enhance user engagement and ensure a dynamic browsing experience. The website was deployed on shared hosting, with full responsiveness to deliver consistent performance across various devices.</p>
+    <div class="container">
+    <a href="https://inspiramuda.com/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+
+
+  },
+  {
+    id: `project10`,
+    image: "foto/sitiarsa.png",
+    category1: "Fullstack Development",
+    category2: "OTT Web Apps",
+    tittle:"Sitiarsastudio.com",
+    technologies: [
+      "Bootstrap",
+      "Next.js",
+      "Github",
+      "VPS Deployment",
+      "PM2",
+      "Nginx",
+       "CD Pipelines",
+    ],
+  description: `<h2>Sitiarsastudio.com</h2>
+    <h3><b>Description</b></h3>
+    <p>Sitiarsastudio.com is an OTT platform offering a wide range of digital content with seamless streaming experience. The platform supports secure payment transactions, media storage, and user authentication to provide a comprehensive entertainment service.</p>
+    <h3>My Role</h3>
+    <p>Successfully developed and delivered an OTT platform for <b>sitiarsastudio.com</b> using <b>Next.js</b>, including custom UI slicing, responsive components, VPS deployment, and a custom CMS for dynamic content management. Designed the system flow, information architecture, and database structure/relations to ensure scalability and maintainability, while integrating <b>Tripay</b> payment gateway, configuring <b>AWS S3</b> for media storage, and implementing <b>Google account registration</b> for user authentication.</p>
+    <div class="container">
+    <a href="https://sitiarsastudio.com/" target="_blank" class="btn-link" style="text-decoration:none;">View Apps</a>
+    </div>
+    `,
+
+
+  },
+  
+  
 ];
 
 containers.addEventListener("click", function (event) {
