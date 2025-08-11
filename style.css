@@ -862,6 +862,7 @@ body {
   background-color: var(--bg-primary-color);
   padding: 12px 24px;
   border-radius: 10px;
+  width: max-content;
 }
 
 .popup-technologies {
@@ -870,7 +871,6 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #5d5cdc #f5f5f5;
   width: 100%;
-  max-width: max-content;
   display: flex;
   justify-content: left;
   flex-direction: row;
